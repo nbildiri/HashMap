@@ -19,11 +19,9 @@ public class OurHashMap<K, V> implements Map<K, V> {
     @Override
     public int size() {
         int size = 0;
-        for (List<Entry> value : values) {
-            if (value != null) {
-                for (Entry entry : value) {
-                    size++;
-                }
+        for (List<Entry> val : values) {
+            if (val != null) {
+                size += val.size();
             }
         }
         return size;
@@ -31,14 +29,20 @@ public class OurHashMap<K, V> implements Map<K, V> {
 
     @Override
     public boolean isEmpty() {
-        return size() == 0;
+        for (List<Entry> val : values) {
+            if (val != null) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public boolean containsKey(Object key) {
-        for (List<Entry> value : values) {
-            if (value != null) {
-                for (Entry entry : value) {
+        for (List<Entry> val : values) {
+            if (val != null) {
+                val.contains(key);
+                for (Entry entry : val) {
                     if (entry.key == key) {
                         return true;
                     }
