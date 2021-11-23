@@ -39,15 +39,8 @@ public class OurHashMap<K, V> implements Map<K, V> {
 
     @Override
     public boolean containsKey(Object key) {
-        for (List<Entry> val : values) {
-            if (val != null) {
-                val.contains(key);
-                for (Entry entry : val) {
-                    if (entry.key == key) {
-                        return true;
-                    }
-                }
-            }
+        if (this.get(key) != null) {
+            return true;
         }
         return false;
     }
