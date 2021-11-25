@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OurHashMapTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-11-23T18:59:19" hostname="Ninas-MBP" time="0.045">
+<testsuite name="OurHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-25T20:35:59" hostname="Ninas-MBP" time="0.021">
   <properties/>
-  <testcase name="containsValue()" classname="OurHashMapTest" time="0.018"/>
-  <testcase name="keySet()" classname="OurHashMapTest" time="0.002"/>
-  <testcase name="putAll()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="remove()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="values()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="getNull()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="put()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="size()" classname="OurHashMapTest" time="0.0"/>
-  <testcase name="containsKeyFalse()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="clear()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="containsKey()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="containsValueFalse()" classname="OurHashMapTest" time="0.002"/>
-  <testcase name="isEmptyFalse()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="putSameKeys()" classname="OurHashMapTest" time="0.001"/>
-  <testcase name="isEmpty()" classname="OurHashMapTest" time="0.001"/>
+  <testcase name="putAll()" classname="OurHashMapTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -39,10 +39,7 @@ public class OurHashMap<K, V> implements Map<K, V> {
 
     @Override
     public boolean containsKey(Object key) {
-        if (this.get(key) != null) {
-            return true;
-        }
-        return false;
+        return this.get(key) != null;
     }
 
     @Override
@@ -117,12 +114,9 @@ public class OurHashMap<K, V> implements Map<K, V> {
 
     @Override
     public void putAll(Map m) {
-        for (List<Entry> val : values) {
-            if (val != null) {
-                for (Entry entry : val) {
-                    m.put(entry.key, entry.value);
-                }
-            }
+        Set<Map.Entry<K, V>> entrySet = m.entrySet();
+        for (Map.Entry<K, V> entry : entrySet) {
+            this.put(entry.getKey(), entry.getValue());
         }
     }
 

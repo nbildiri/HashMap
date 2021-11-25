@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -196,20 +193,20 @@ class OurHashMapTest {
     @Test
     void putAll() {
         // given
+        HashMap<String, String> m = new HashMap<>();
         OurHashMap<String, String> map = new OurHashMap<>();
-        OurHashMap<String, String> m = new OurHashMap<>();
 
         // when
-        map.put("ENGLISH1", "HELLO");
-        map.put("SPANISH", "HOLA");
-        map.put("HEBREW", "SHALOM");
-        map.put("FRENCH", "BONJOUR");
+        m.put("ENGLISH1", "HELLO");
+        m.put("SPANISH", "HOLA");
+        m.put("HEBREW", "SHALOM");
+        m.put("FRENCH", "BONJOUR");
 
         map.putAll(m);
 
 
         // then
-        assertEquals(4, m.size());
+        assertEquals(4, map.size());
         assertTrue(m.containsKey("ENGLISH1"));
     }
 
